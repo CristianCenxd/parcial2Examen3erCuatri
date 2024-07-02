@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Libro</title>
+</head>
+<body>
+    <h2>Crear Libro</h2>
+    <form action="/CrearLibro" method="post">
+        <label for="titulo">Título:</label>
+        <input type="text" id="titulo" name="titulo" required><br><br>
+        
+        <label for="fechaPublicacion">Fecha de Publicación (YYYY-MM-DD):</label>
+        <input type="text" id="fechaPublicacion" name="fechaPublicacion" required><br><br>
+        
+        <label for="autorId">ID del Autor:</label>
+        <input type="number" id="autorId" name="autorId" required><br><br>
+        
+        <label for="precio">Precio:</label>
+        <input type="number" step="0.01" id="precio" name="precio" required><br><br>
+        
+        <input type="submit" value="Crear Libro">
+    </form>
+</body>
+</html>
